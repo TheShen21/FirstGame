@@ -46,7 +46,7 @@ public class Enemy : MonoBehaviour
         }
         void Die()
         {
-            ScoreScript.scoreValue = +100;
+            ScoreScript.scoreValue += 5;
             Debug.Log("Enemy died");
             Destroy(gameObject);
 
