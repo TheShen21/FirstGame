@@ -22,7 +22,7 @@ public class playerHealth : MonoBehaviour
         currentHealth -= damage;
         if (currentHealth <= 0)
         {
-            Debug.Log("you die");
+            FindObjectOfType<GameManage>().GameOver();
         }
         healthBar.SetHealth(currentHealth);
     }
