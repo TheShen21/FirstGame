@@ -12,7 +12,6 @@ public class GameManage : MonoBehaviour
         if(gameEnded == false)
         {
             gameEnded = true;
-            Debug.Log("u ded");
             Over();
         }
 

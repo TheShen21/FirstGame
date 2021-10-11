@@ -6,8 +6,8 @@ public class Spawn : MonoBehaviour
 {
     public GameObject enemy;
     public Transform Spawnpoint;
-    public int count = 0;
-    public int timer = 3;
+    public int count = 7500;
+    public int timer = 10;
 
     // Start is called before the first frame update
     void Start()
