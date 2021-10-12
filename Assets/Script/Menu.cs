@@ -8,6 +8,17 @@ public class Menu : MonoBehaviour
     public void PlayGame()
     {
         SceneManager.LoadScene("Level 1");
+        ScoreScript.scoreValue = 0;
+
+    }
+    public void GoMenu()
+    {
+        SceneManager.LoadScene("Menu");
+        ScoreScript.scoreValue = 0;
+    }
+    public void EndGame()
+    {
+        Application.Quit();
     }
 
 }

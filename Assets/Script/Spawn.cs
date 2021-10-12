@@ -8,6 +8,7 @@ public class Spawn : MonoBehaviour
     public Transform Spawnpoint;
     public int count = 7500;
     public int timer = 10;
+    public int Srate = 10;
 
     // Start is called before the first frame update
     void Start()
@@ -22,7 +23,7 @@ public class Spawn : MonoBehaviour
             Instantiate(enemy, Spawnpoint.position, Spawnpoint.rotation);
             Debug.Log("hi");
             count = 0;
-            timer -= 50;
+            timer -= Srate;
         }
             
        
